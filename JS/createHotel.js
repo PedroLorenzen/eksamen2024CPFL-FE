@@ -8,34 +8,36 @@ function getHotel()
         city: document.getElementById("inpHotelCity").value,
         zip: document.getElementById("inpHotelZip").value,
         email: document.getElementById("inpHotelEmail").value,
-        phone: document.getElementById("inpHotelPhone").value
+        phone: document.getElementById("inpHotelPhone").value,
+        description: document.getElementById("inpHotelDescription").value,
+        picture: document.getElementById("inpHotelPictureUrl").value
 
     };
 }
 
-const competitionBaseUrl = "http://localhost:8080/competition";
+const hotelBaseUrl = "http://localhost:8080/hotel";
 
 function navigateFrontpage()
 {
-    window.location.href = "frontpageCompetitions.html";
+    window.location.href = "frontpage.html";
 }
 
-async function postCompetition(competition)
+async function postHotel(hotel)
 {
-    const postEndpoint = `${competitionBaseUrl}`;
-    console.log("Sending Competition Data: ", competition);
-    await sendObjectAsJson(postEndpoint, competition, "POST");
-    alert("Competition with date: " + competition.date + ", is saved to DB");
+    const postEndpoint = `${hotelBaseUrl}`;
+    console.log("Sending hotel Data: ", hotel);
+    await sendObjectAsJson(postEndpoint, hotel, "POST");
+    alert("Competition with name: " + hotel.name + ", is saved to DB");
     window.location.reload();
 }
 
 //submit så den hænger sammen med formen i html og sørger for at required fungerer.
-document.getElementById("createCompetitionForm").addEventListener('submit', async () =>
+document.getElementById("createHotelForm").addEventListener('submit', async () =>
 {
     event.preventDefault();
     try
     {
-        await postCompetition(getHotel());
+        await postHotel(getHotel());
     }
     catch (error)
     {

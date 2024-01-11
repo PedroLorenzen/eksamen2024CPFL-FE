@@ -1,0 +1,65 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: none;
+    font-family: Bahnschrift, sans-serif;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin: auto;
+    font-size: medium;
+    font-family: Bahnschrift, sans-serif;
+}
+
+.form-lab {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Updated to style all input elements of type text and number */
+.inputfield {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px; /* Added for spacing */
+}
+
+button {
+    display: block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    font-family: Bahnschrift, sans-serif;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}

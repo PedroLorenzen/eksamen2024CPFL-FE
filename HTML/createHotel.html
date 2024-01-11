@@ -7,17 +7,41 @@
 </head>
 <body>
 
-<h1>CRUD Competition</h1>
+<h1>Create Hotel</h1>
 <div class="form-container">
-  <form class="form-group" id="createCompetitionForm">
-    <label class="form-lab" for="inpCompetitionDate">Competition Date:</label>
-    <input placeholder="27.5.2024" class="inputfield" id="inpCompetitionDate" required type="text"><br>
+  <form class="form-group" id="createHotelForm">
+    <label class="form-lab" for="inpHotelName">Name:</label>
+    <input placeholder="Grand Maestro" class="inputfield" id="inpHotelName" required type="text"><br>
 
-    <button class="button-style" id="btnPostCompetition" type="submit">Create New Competition</button>
+    <label class="form-lab" for="inpHotelAddress">Adress:</label>
+    <input placeholder="Las Vegas boulevard 1" class="inputfield" id="inpHotelAddress" required type="text"><br>
+
+    <label class="form-lab" for="inpHotelCity">City:</label>
+    <input placeholder="USA" class="inputfield" id="inpHotelCity" required type="text"><br>
+
+    <label class="form-lab" for="inpHotelZip">Zip:</label>
+    <input placeholder="172930" class="inputfield" id="inpHotelZip" required type="number"><br>
+
+    <label class="form-lab" for="inpHotelEmail">Email:</label>
+    <input placeholder="grandmaestro@loriderhotels.com" class="inputfield" id="inpHotelEmail" required type="text"><br>
+
+    <label class="form-lab" for="inpHotelPhone">Phone:</label>
+    <input placeholder="12345678" class="inputfield" id="inpHotelPhone" required type="number"><br>
+
+    <label class="form-lab" for="inpHotelDescription">Description:</label>
+    <input placeholder="Beautiful hotel in the heart of Venedi" class="inputfield" id="inpHotelDescription" required type="text"><br>
+
+    <label class="form-lab" for="inpHotelPictureUrl">Picture URL:</label>
+    <input placeholder="www.shutterstock.com/pictureurl" class="inputfield" id="inpHotelPictureUrl" required type="text"><br>
+
+
+    <button class="button-style" type="submit">Create New Hotel</button>
   </form>
   <button class="button-style" id="btnFrontpage" type="button">Return to Frontpage</button>
 
 </div>
+
+<script src="../JS/createHotel.js" type="module"></script>
 
 </body>
 </html>
