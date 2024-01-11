@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Guest</title>
+  <link href="../../CSS/CRUD.css" rel="stylesheet">
+</head>
+<body>
+
+<h1>Create Guest</h1>
+<div class="form-container">
+  <form class="form-group" id="createGuestForm">
+
+    <label class="form-lab" for="inpFirstName">First Name:</label>
+    <input placeholder="Ole" class="inputfield" id="inpFirstName" required type="text"><br>
+
+    <label class="form-lab" for="inpLastName">Last Name:</label>
+    <input placeholder="Henriksen" class="inputfield" id="inpLastName" required type="text"><br>
+
+    <label class="form-lab" for="inpEmail">Email:</label>
+    <input placeholder="olehenriksen@beautysalonen.dk" class="inputfield" id="inpEmail" required type="text"><br>
+
+    <label class="form-lab" for="inpPhone">Phone Number:</label>
+    <input placeholder="22842673" class="inputfield" id="inpPhone" required type="number"><br>
+
+    <button class="button-style" type="submit">Create New Guest</button>
+  </form>
+  <button class="button-style" id="btnFrontpage" type="button">Return to Frontpage</button>
+
+</div>
+
+<script src="../../JS/guest/createGuest.js" type="module"></script>
+
+</body>
+</html>

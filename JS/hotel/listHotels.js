@@ -6,10 +6,14 @@ const hotelsBaseURL = "http://localhost:8080/dtohotels";
 const pbCreateHotel = document.getElementById("pbCreateHotel");
 const tblHotels = document.getElementById("tblHotels");
 
-
 function navigateToUpdateHotel(hotelId)
 {
     window.location.href = "updateHotel.html?id=" + hotelId;
+}
+
+function navigateToHotelFrontPage(hotelId)
+{
+    window.location.href = "hotelFrontPage.html?id=" + hotelId;
 }
 
 function navigateToCreateHotel()
@@ -18,6 +22,26 @@ function navigateToCreateHotel()
 }
 
 pbCreateHotel.addEventListener('click', navigateToCreateHotel);
+
+const searchInput = document.getElementById("inpSearchHotel");
+
+searchInput.addEventListener("input", filterHotels);
+
+function filterHotels()
+{
+    const searchValue = searchInput.value.toLowerCase();
+    const filteredHotels = hotels.filter(function (hotel)
+    {
+        return hotel.name.toLowerCase().includes(searchValue);
+    });
+    updateTableWithFilteredHotels(filteredHotels);
+}
+
+function updateTableWithFilteredHotels(filteredHotels)
+{
+    tblHotels.innerHTML = "";
+    filteredHotels.forEach(createRow);
+}
 
 function createRow(hotel)
 {
@@ -39,10 +63,21 @@ function createRow(hotel)
     cell.innerHTML = hotel.rooms;
 
     cell = row.insertCell(cellCount++);
+    const pbBook = document.createElement("input");
+    pbBook.type = "button";
+    pbBook.setAttribute("value", "Book Hotel");
+    pbBook.className = "btn";
+    cell.appendChild(pbBook);
+    pbBook.onclick = function ()
+    {
+        navigateToHotelFrontPage(hotel.id);
+    }
+
+    cell = row.insertCell(cellCount++);
     const pbUpdate = document.createElement("input");
     pbUpdate.type = "button";
     pbUpdate.setAttribute("value", "Update Hotel");
-    pbUpdate.className = "btn2";
+    pbUpdate.className = "btn";
     cell.appendChild(pbUpdate);
     pbUpdate.onclick = function ()
     {
@@ -53,7 +88,7 @@ function createRow(hotel)
     const pbDelete = document.createElement("input");
     pbDelete.type = "button";
     pbDelete.setAttribute("value", "Delete Hotel");
-    pbDelete.className = "btn2";
+    pbDelete.className = "btn";
     cell.appendChild(pbDelete);
     pbDelete.onclick = function ()
     {

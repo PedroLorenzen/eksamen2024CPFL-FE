@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue, reminiscent of the sea */
+    text-align: center;
+}
+
+header h1 {
+    color: #003366; /* Dark blue for contrast */
+    margin: 40px;
+}
+
+nav button {
+    background-color: #0077be; /* Nautical blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+nav button:hover {
+    background-color: #005f8b; /* Darker shade on hover */
+}
