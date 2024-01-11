@@ -1,4 +1,6 @@
-import {sendObjectAsJson} from "./modules/sendObjectAsJson.js";
+import {sendObjectAsJson} from "../modules/sendObjectAsJson.js";
+
+const hotelBaseUrl = "http://localhost:8080/hotel";
 
 function getHotel()
 {
@@ -15,13 +17,6 @@ function getHotel()
     };
 }
 
-const hotelBaseUrl = "http://localhost:8080/hotel";
-
-function navigateFrontpage()
-{
-    window.location.href = "frontpage.html";
-}
-
 async function postHotel(hotel)
 {
     const postEndpoint = `${hotelBaseUrl}`;
@@ -31,7 +26,6 @@ async function postHotel(hotel)
     window.location.reload();
 }
 
-//submit så den hænger sammen med formen i html og sørger for at required fungerer.
 document.getElementById("createHotelForm").addEventListener('submit', async () =>
 {
     event.preventDefault();
@@ -44,5 +38,10 @@ document.getElementById("createHotelForm").addEventListener('submit', async () =
         alert("Error posting Competition: " + error + " - " + error.message);
     }
 });
+
+function navigateFrontpage()
+{
+    window.location.href = "frontpage.html";
+}
 
 document.getElementById("btnFrontpage").addEventListener('click', navigateFrontpage);
