@@ -32,12 +32,49 @@ function getRoom()
 async function postRoom(room)
 {
     const postEndpoint = roomBaseURL + "/" + room.hotelId + "/room";
-
     console.log("Sending room data: ", room);
-    // if room exists... do something else
-    await sendObjectAsJson(postEndpoint, room, "POST");
-    alert("Room-number: " + room.roomNumber + " in hotel: " + room.hotelId + ", is saved to DB");
-    window.location.reload();
+    try
+    {
+        const response = await sendObjectAsJson(postEndpoint, room, "POST");
+        if (response.status === 400)
+        {
+            alert("Room with room-number: " + room.roomNumber + " already exists.");
+        }
+        else
+        {
+            alert("Room-number: " + room.roomNumber + " in hotel: " + room.hotelId + ", is saved to DB");
+            window.location.reload();
+        }
+    }
+    catch (error)
+    {
+        alert("Error posting user: " + error + " - " + error.message);
+    }
+
+}
+
+async function postUser(user)
+{
+    const postEndpoint = `${userBaseUrl}`;
+    console.log("Sending user Data: ", user);
+    try
+    {
+        const response = await sendObjectAsJson(postEndpoint, user, "POST");
+
+        if (response.status === 400)
+        { // Check if status is BAD_REQUEST
+            alert("User with username: " + user.username + " already exists.");
+        }
+        else
+        {
+            alert("User with name: " + user.name + " and username: " + user.username + ", is saved to DB");
+            window.location.reload();
+        }
+    }
+    catch (error)
+    {
+        alert("Error posting user: " + error + " - " + error.message);
+    }
 }
 
 document.getElementById("createRoomForm").addEventListener('submit', async () =>

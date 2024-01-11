@@ -36,7 +36,7 @@ document.getElementById("createHotelForm").addEventListener('submit', async () =
     }
     catch (error)
     {
-        alert("Error posting room: " + error + " - " + error.message);
+        alert("Error posting hotel: " + error + " - " + error.message);
     }
 });
 

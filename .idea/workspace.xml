@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9531dc7c-cdef-472d-8d55-503f7da16fa0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5872defd-0dad-4389-900d-f363aa228c34.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5872defd-0dad-4389-900d-f363aa228c34.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/hotel/updateHotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/hotel/updateHotel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/room/createRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/room/createRoom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/lists.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/lists.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/hotel/createHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/createHotel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/hotel/updateHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/updateHotel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/modules/createOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/modules/createOption.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/room/createRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/room/createRoom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +17,8 @@
       <list>
         <option value="package.json" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -75,7 +71,7 @@
       <workItem from="1704979126459" duration="361000" />
       <workItem from="1704979923824" duration="4584000" />
       <workItem from="1704985064914" duration="4324000" />
-      <workItem from="1704993929175" duration="4314000" />
+      <workItem from="1704993929175" duration="7138000" />
     </task>
     <servers />
   </component>
