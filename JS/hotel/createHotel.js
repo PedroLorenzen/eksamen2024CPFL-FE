@@ -23,7 +23,7 @@ async function postHotel(hotel)
     console.log("Sending hotel Data: ", hotel);
     // if hotel exists... do something else
     await sendObjectAsJson(postEndpoint, hotel, "POST");
-    alert("Competition with name: " + hotel.name + ", is saved to DB");
+    alert("Hotel with name: " + hotel.name + ", is saved to DB");
     window.location.reload();
 }
 
@@ -36,7 +36,7 @@ document.getElementById("createHotelForm").addEventListener('submit', async () =
     }
     catch (error)
     {
-        alert("Error posting Competition: " + error + " - " + error.message);
+        alert("Error posting room: " + error + " - " + error.message);
     }
 });
 

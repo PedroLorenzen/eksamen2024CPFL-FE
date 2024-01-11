@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9531dc7c-cdef-472d-8d55-503f7da16fa0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5872defd-0dad-4389-900d-f363aa228c34.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5872defd-0dad-4389-900d-f363aa228c34.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/hotel/updateHotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/hotel/updateHotel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/room/createRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/room/createRoom.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/hotel/createHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/createHotel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/hotel/updateHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/updateHotel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/modules/createOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/modules/createOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/room/createRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/room/createRoom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +21,8 @@
       <list>
         <option value="package.json" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,22 +40,22 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/chris/OneDrive/Datamatiker uddannelsen/3 semester/Eksamen/Programmering/Eksamensprojekt/eksamen2024CPFL-FE/JS/modules",
-    "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/OneDrive/Datamatiker uddannelsen/3 semester/Eksamen/Programmering/Eksamensprojekt/eksamen2024CPFL-FE/JS/modules&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chris\OneDrive\Datamatiker uddannelsen\3 semester\Eksamen\Programmering\Eksamensprojekt\eksamen2024CPFL-FE\HTML\hotel" />
@@ -70,6 +75,7 @@
       <workItem from="1704979126459" duration="361000" />
       <workItem from="1704979923824" duration="4584000" />
       <workItem from="1704985064914" duration="4324000" />
+      <workItem from="1704993929175" duration="4314000" />
     </task>
     <servers />
   </component>

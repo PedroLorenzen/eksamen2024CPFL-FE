@@ -20,7 +20,7 @@ async function fetchHotelData(hotelId)
     }
     catch (error)
     {
-        console.error('Error fetching sailboat data:', error);
+        console.error('Error fetching hotel data:', error);
     }
 }
 
@@ -86,12 +86,12 @@ async function putHotel(hotel)
     const res = await sendObjectAsJson(putUrl, hotel, "PUT");
     if (res.ok)
     {
-        alert("Sailboat has been updated in DB");
+        alert("Hotel has been updated in DB");
         navigateFrontpage();
     }
     else
     {
-        alert("Failed to update sailboat");
+        alert("Failed to update hotel");
     }
 }
 

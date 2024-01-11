@@ -10,6 +10,7 @@
 <h1>Create Room</h1>
 <div class="form-container">
     <form class="form-group" id="createRoomForm">
+
         <label class="form-lab" for="inpNumber">Room Number:</label>
         <input placeholder="102" class="inputfield" id="inpNumber" required type="number"><br>
 
@@ -21,8 +22,8 @@
             <option value = 4 > 4 </option>
         </select>
 
-        <label class="form-lab" for="inpPrice">Price:</label>
-        <input placeholder="25" class="inputfield" id="inpPrice" required type="number"><br>
+        <label class="form-lab" for="inpPrice">Price (€):</label>
+        <input placeholder="25 €" class="inputfield" id="inpPrice" required type="number"><br>
 
         <label class="form-lab" for="inpPicture">Picture URL:</label>
         <input placeholder="www.shutterstock.com/pictureURL" class="inputfield" id="inpPicture" required type="text"><br>
@@ -33,10 +34,9 @@
         <label class="form-lab" for="inpType">Type:</label>
         <input placeholder="Luxury Room" class="inputfield" id="inpType" required type="text"><br>
 
-        <label class="form-lab" for="inpStatusBooked">Availability:</label>
-        <select id="inpStatusBooked" class="inputfield">
-            <option value = false > Available </option>
-            <option value = true > Booked </option>
+        <label class="form-lab" for="inpHotel">Hotel:</label>
+        <select id="inpHotel" class="inputfield">
+            <!-- Options will be added through JS -->
         </select>
 
         <button class="button-style" type="submit">Create New Room</button>
@@ -45,7 +45,7 @@
 
 </div>
 
-<script src="../../JS/room/createRoom.js"></script>
+<script src="../../JS/room/createRoom.js" type="module"></script>
 
 </body>
 </html>

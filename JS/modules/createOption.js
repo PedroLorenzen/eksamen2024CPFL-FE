@@ -1,8 +1,7 @@
 export function createOption(text, value)
 {
-    console.log("Opretter dropdown element med tekst: " + text + " og værdi: " + value);
-    // Opretter et tomt option HTML-element med tekst og værdi.
-    const option = document.createElement('option');
+    console.log("Building dropdown element with the text: " + text + " and value: " + value);
+    let option = document.createElement('option');
     option.text = text;
     option.value = value;
     return option;
