@@ -21,6 +21,7 @@ async function postHotel(hotel)
 {
     const postEndpoint = `${hotelBaseUrl}`;
     console.log("Sending hotel Data: ", hotel);
+    // if hotel exists... do something else
     await sendObjectAsJson(postEndpoint, hotel, "POST");
     alert("Competition with name: " + hotel.name + ", is saved to DB");
     window.location.reload();
