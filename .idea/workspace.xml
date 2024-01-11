@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9531dc7c-cdef-472d-8d55-503f7da16fa0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/lists.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/lists.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/hotel/listHotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/hotel/listHotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/room/createRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/room/createRoom.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/hotel/listHotels.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/listHotels.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/room/createRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/room/createRoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/user/createUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/user/createUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eksamen2024CPFL-FE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/eksamen2024CPFL-FE.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +69,7 @@
       <workItem from="1704979126459" duration="361000" />
       <workItem from="1704979923824" duration="4584000" />
       <workItem from="1704985064914" duration="4324000" />
-      <workItem from="1704993929175" duration="14216000" />
+      <workItem from="1704993929175" duration="14638000" />
     </task>
     <servers />
   </component>

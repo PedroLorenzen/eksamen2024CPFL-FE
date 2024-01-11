@@ -21,6 +21,11 @@ function navigateToCreateHotel()
     window.location.href = "createHotel.html";
 }
 
+function navigateToBookHotel(hotelId)
+{
+    window.location.href = "createReservation.html?id=" + hotelId;
+}
+
 pbCreateHotel.addEventListener('click', navigateToCreateHotel);
 
 const searchInput = document.getElementById("inpSearchHotel");
@@ -30,10 +35,15 @@ searchInput.addEventListener("input", filterHotels);
 function filterHotels()
 {
     const searchValue = searchInput.value.toLowerCase();
-    const filteredHotels = hotels.filter(function (hotel)
+    let filteredHotels = [];
+
+    for (let i = 0; i < hotels.length; i++)
     {
-        return hotel.name.toLowerCase().includes(searchValue);
-    });
+        if (hotels[i].name.toLowerCase().includes(searchValue))
+        {
+            filteredHotels.push(hotels[i]);
+        }
+    }
     updateTableWithFilteredHotels(filteredHotels);
 }
 
