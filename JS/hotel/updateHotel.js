@@ -41,6 +41,7 @@ async function populateForm()
             document.getElementById("inpHotelPhone").value = hotelData.phone;
             document.getElementById("inpHotelDescription").value = hotelData.description;
             document.getElementById("inpHotelPictureUrl").value = hotelData.picture;
+            document.getElementById("inpHotelCreated").value = hotelData.created;
         }
     }
     else
@@ -74,7 +75,8 @@ function getHotel()
         email: document.getElementById("inpHotelEmail").value,
         phone: document.getElementById("inpHotelPhone").value,
         description: document.getElementById("inpHotelDescription").value,
-        picture: document.getElementById("inpHotelPictureUrl").value
+        picture: document.getElementById("inpHotelPictureUrl").value,
+        created: document.getElementById("inpHotelCreated").value
     };
 }
 
