@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9531dc7c-cdef-472d-8d55-503f7da16fa0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/updateHotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/updateHotel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/hotel/updateHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/updateHotel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/hotel/listHotels.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/listHotels.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +13,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -68,7 +66,7 @@
       <workItem from="1704958798191" duration="1352000" />
       <workItem from="1704979126459" duration="361000" />
       <workItem from="1704979923824" duration="4584000" />
-      <workItem from="1704985064914" duration="2425000" />
+      <workItem from="1704985064914" duration="2724000" />
     </task>
     <servers />
   </component>

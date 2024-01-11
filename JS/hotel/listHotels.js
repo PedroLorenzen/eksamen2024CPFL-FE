@@ -33,7 +33,7 @@ function createRow(hotel)
     cell.innerHTML = hotel.name;
 
     cell = row.insertCell(cellCount++);
-    cell.innerHTML = hotel.adress;
+    cell.innerHTML = hotel.address;
 
     cell = row.insertCell(cellCount++);
     cell.innerHTML = hotel.rooms;
