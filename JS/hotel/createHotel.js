@@ -21,10 +21,24 @@ async function postHotel(hotel)
 {
     const postEndpoint = `${hotelBaseUrl}`;
     console.log("Sending hotel Data: ", hotel);
-    // if hotel exists... do something else
-    await sendObjectAsJson(postEndpoint, hotel, "POST");
-    alert("Hotel with name: " + hotel.name + ", is saved to DB");
-    window.location.reload();
+
+    try
+    {
+        const response = await sendObjectAsJson(postEndpoint, hotel, "POST");
+        if (response.status === 400)
+        {
+            alert("Hotel with name: " + hotel.name + " already exists.");
+        }
+        else
+        {
+            alert("Hotel with name: " + hotel.name + ", is saved to DB");
+            window.location.reload();
+        }
+    }
+    catch (error)
+    {
+        alert("Error posting hotel: " + error + " - " + error.message);
+    }
 }
 
 document.getElementById("createHotelForm").addEventListener('submit', async () =>

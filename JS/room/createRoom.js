@@ -48,7 +48,7 @@ async function postRoom(room)
     }
     catch (error)
     {
-        alert("Error posting user: " + error + " - " + error.message);
+        alert("Error posting room: " + error + " - " + error.message);
     }
 
 }
