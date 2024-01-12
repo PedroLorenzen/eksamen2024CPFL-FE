@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Create Reservation</title>
+    <link rel="stylesheet" href="../../CSS/CRUD.css">
 </head>
 <body>
+<h1>Create Reservation</h1>
+<div class="form-container">
+    <form class="form-group" id="createReservationForm">
+
+        <label class="form-lab" for="showHotelName">Hotel Name:</label>
+        <input class="inputfield" id="showHotelName" readonly type="text"> <br>
+
+        <label class="form-lab" for="inpGuestPhone">Guest Phone:</label>
+        <input placeholder="Search Guest Phone-number" class="inputfield" id="inpGuestPhone" required type="text"><br>
+
+        <label class="form-lab" for="inpRoom">Room:</label>
+        <select id="inpRoom" class="inputfield">
+            <!-- Options will be added through JS -->
+        </select> <br>
+
+        <label class="form-lab" for="showRoomNumberOfBeds">Number Of Beds:</label>
+        <input placeholder="3" class="inputfield" id="showRoomNumberOfBeds" readonly type="number"><br>
+
+        <label class="form-lab" for="showRoomPrice">Room Price:</label>
+        <input placeholder="50 €" class="inputfield" id="showRoomPrice" readonly type="number"><br>
+
+        <label class="form-lab" for="showRoomType">Room Type:</label>
+        <input placeholder="Luxury Room" class="inputfield" id="showRoomType" readonly type="text"><br>
+
+        <label class="form-lab" for="inpReservationPrice">Reservation Price (€):</label>
+        <input placeholder="25 €" class="inputfield" id="inpReservationPrice" required type="number"><br>
+
+        <label class="form-lab" for="inpDate">Reservation Date:</label>
+        <input placeholder="2024-12-1" class="inputfield" id="inpDate" required type="date"><br>
+
+        <button class="button-style" type="submit">Create Reservation</button>
+
+    </form>
+    <button class="button-style" id="btnFrontpage">Return to frontpage</button>
+</div>
+
+<script src="../../JS/reservation/createReservation.js" type="module"></script>
 
 </body>
+
 </html>

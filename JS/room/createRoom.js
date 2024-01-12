@@ -68,7 +68,7 @@ document.getElementById("createRoomForm").addEventListener('submit', async () =>
 
 function navigateFrontpage()
 {
-    window.location.href = "frontpage.html";
+    window.location.href = "../../html/frontpage.html";
 }
 
 document.getElementById("btnFrontpage").addEventListener('click', navigateFrontpage);

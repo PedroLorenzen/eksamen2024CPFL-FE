@@ -26,7 +26,6 @@ async function fetchHotelData(hotelId)
 
 async function populateForm()
 {
-    //const hotelId = getIdFromURL();
     if (getIdFromURL())
     {
         const hotelData = await fetchHotelData(getIdFromURL());
@@ -113,7 +112,7 @@ document.getElementById("updateHotelForm").addEventListener('submit', async () =
 
 function navigateFrontpage()
 {
-    window.location.href = "frontpage.html";
+    window.location.href = "../../html/frontpage.html";
 }
 
 document.getElementById("btnFrontpage").addEventListener('click', navigateFrontpage);

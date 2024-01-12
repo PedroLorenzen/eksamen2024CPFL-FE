@@ -11,11 +11,6 @@ function navigateToUpdateHotel(hotelId)
     window.location.href = "updateHotel.html?id=" + hotelId;
 }
 
-function navigateToHotelFrontPage(hotelId)
-{
-    window.location.href = "hotelFrontPage.html?id=" + hotelId;
-}
-
 function navigateToCreateHotel()
 {
     window.location.href = "createHotel.html";
@@ -23,8 +18,17 @@ function navigateToCreateHotel()
 
 function navigateToBookHotel(hotelId)
 {
-    window.location.href = "createReservation.html?id=" + hotelId;
+    window.location.href = "../../html/reservation/createReservation.html?id=" + hotelId;
 }
+
+function navigateFrontpage()
+{
+    window.location.href = "../../html/frontpage.html";
+}
+
+document.getElementById("btnFrontpage").addEventListener('click', navigateFrontpage);
+
+
 
 pbCreateHotel.addEventListener('click', navigateToCreateHotel);
 
@@ -80,7 +84,7 @@ function createRow(hotel)
     cell.appendChild(pbBook);
     pbBook.onclick = function ()
     {
-        navigateToHotelFrontPage(hotel.id);
+        navigateToBookHotel(hotel.id);
     }
 
     cell = row.insertCell(cellCount++);
