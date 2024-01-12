@@ -2,7 +2,6 @@ export async function sendObjectAsJson(url, object, httpMethod)
 {
     try
     {
-        // Initialize fetch request
         const response = await fetch(url,
             {
                 method: httpMethod,

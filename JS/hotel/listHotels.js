@@ -1,10 +1,7 @@
 import {fetchAnyUrl} from "../modules/fetchAnyUrl.js";
 import {deleteEntry} from "../modules/deleteEntry.js";
 
-const hotelsBaseURL = "http://localhost:8080/dtohotels";
-
-const pbCreateHotel = document.getElementById("pbCreateHotel");
-const tblHotels = document.getElementById("tblHotels");
+// Start of navigation functions
 
 function navigateToUpdateHotel(hotelId)
 {
@@ -26,36 +23,38 @@ function navigateFrontpage()
     window.location.href = "../../html/frontpage.html";
 }
 
+const pbCreateHotel = document.getElementById("pbCreateHotel");
+const tblHotels = document.getElementById("tblHotels");
+
 document.getElementById("btnFrontpage").addEventListener('click', navigateFrontpage);
-
-
 
 pbCreateHotel.addEventListener('click', navigateToCreateHotel);
 
-const searchInput = document.getElementById("inpSearchHotel");
+// Start of table creation
 
-searchInput.addEventListener("input", filterHotels);
+const hotelsBaseURL = "http://localhost:8080/dtohotels";
 
-function filterHotels()
-{
-    const searchValue = searchInput.value.toLowerCase();
-    let filteredHotels = [];
+let hotels = [];
 
-    for (let i = 0; i < hotels.length; i++)
-    {
-        if (hotels[i].name.toLowerCase().includes(searchValue))
-        {
-            filteredHotels.push(hotels[i]);
-        }
-    }
-    updateTableWithFilteredHotels(filteredHotels);
-}
-
-function updateTableWithFilteredHotels(filteredHotels)
+async function fetchHotels()
 {
     tblHotels.innerHTML = "";
-    filteredHotels.forEach(createRow);
+    hotels = await fetchAnyUrl(hotelsBaseURL);
+    hotels.forEach(createRow);
 }
+
+document.addEventListener("DOMContentLoaded",
+    async function ()
+    {
+        try
+        {
+            await fetchHotels();
+        }
+        catch (error)
+        {
+            console.error("Error fetching hotels", error);
+        }
+    });
 
 function createRow(hotel)
 {
@@ -118,24 +117,29 @@ function createRow(hotel)
     }
 }
 
-let hotels = [];
+// Start of search function to search for specific hotels
 
-async function fetchHotels()
+function filterHotels()
 {
-    tblHotels.innerHTML = "";
-    hotels = await fetchAnyUrl(hotelsBaseURL);
-    hotels.forEach(createRow);
+    const searchValue = searchInput.value.toLowerCase();
+    let filteredHotels = [];
+
+    for (let i = 0; i < hotels.length; i++)
+    {
+        if (hotels[i].name.toLowerCase().includes(searchValue))
+        {
+            filteredHotels.push(hotels[i]);
+        }
+    }
+    updateTableWithFilteredHotels(filteredHotels);
 }
 
-document.addEventListener("DOMContentLoaded",
-    async function ()
-    {
-        try
-        {
-            await fetchHotels();
-        }
-        catch (error)
-        {
-            console.error("Error fetching hotels", error);
-        }
-    });
+function updateTableWithFilteredHotels(filteredHotels)
+{
+    tblHotels.innerHTML = "";
+    filteredHotels.forEach(createRow);
+}
+
+const searchInput = document.getElementById("inpSearchHotel");
+
+searchInput.addEventListener("input", filterHotels);

@@ -86,7 +86,7 @@ async function putHotel(hotel)
     if (res.ok)
     {
         alert("Hotel has been updated in DB");
-        navigateFrontpage();
+        btnHotelList();
     }
     else
     {
@@ -110,10 +110,10 @@ document.getElementById("updateHotelForm").addEventListener('submit', async () =
 
 // button to navigate to the frontpage
 
-function navigateFrontpage()
+function btnHotelList()
 {
-    window.location.href = "../../html/frontpage.html";
+    window.location.href = "./listHotels.html";
 }
 
-document.getElementById("btnFrontpage").addEventListener('click', navigateFrontpage);
+document.getElementById("btnHotelList").addEventListener('click', btnHotelList);
 

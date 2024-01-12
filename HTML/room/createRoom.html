@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Create Room</title>
     <link href="../../CSS/CRUD.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -13,30 +13,31 @@
     <form class="form-group" id="createRoomForm">
 
         <label class="form-lab" for="inpNumber">Room Number:</label>
-        <input placeholder="102" class="inputfield" id="inpNumber" required type="number"><br>
+        <input class="inputfield" id="inpNumber" placeholder="102" required type="number"><br>
 
         <label class="form-lab" for="inpBeds">Number Of Beds:</label>
-        <select id="inpBeds" class="inputfield">
-            <option value = 1 > 1 </option>
-            <option value = 2 > 2 </option>
-            <option value = 3 > 3 </option>
-            <option value = 4 > 4 </option>
+        <select class="inputfield" id="inpBeds">
+            <option value=1> 1</option>
+            <option value=2> 2</option>
+            <option value=3> 3</option>
+            <option value=4> 4</option>
         </select>
 
         <label class="form-lab" for="inpPrice">Price (€):</label>
-        <input placeholder="25 €" class="inputfield" id="inpPrice" required type="number"><br>
+        <input class="inputfield" id="inpPrice" placeholder="25 €" required type="number"><br>
 
         <label class="form-lab" for="inpPicture">Picture URL:</label>
-        <input placeholder="www.shutterstock.com/pictureURL" class="inputfield" id="inpPicture" required type="text"><br>
+        <input class="inputfield" id="inpPicture" placeholder="www.shutterstock.com/pictureURL" required
+               type="text"><br>
 
         <label class="form-lab" for="inpDescription">Description:</label>
-        <input placeholder="Beautiful seaside bedroom" class="inputfield" id="inpDescription" required type="text"><br>
+        <input class="inputfield" id="inpDescription" placeholder="Beautiful seaside bedroom" required type="text"><br>
 
         <label class="form-lab" for="inpType">Type:</label>
-        <input placeholder="Luxury Room" class="inputfield" id="inpType" required type="text"><br>
+        <input class="inputfield" id="inpType" placeholder="Luxury Room" required type="text"><br>
 
         <label class="form-lab" for="inpHotel">Hotel:</label>
-        <select id="inpHotel" class="inputfield">
+        <select class="inputfield" id="inpHotel">
             <!-- Options will be added through JS -->
         </select>
 

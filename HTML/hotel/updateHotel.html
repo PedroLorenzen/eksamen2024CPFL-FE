@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Update Hotel</title>
-    <link rel="stylesheet" href="../../CSS/CRUD.css">
+    <link href="../../CSS/CRUD.css" rel="stylesheet">
 </head>
 <body>
 <h1>Update Hotel</h1>
@@ -14,28 +14,33 @@
         <input class="inputfield" id="inpHotelId" readonly type="text">
 
         <label class="form-lab" for="inpHotelName">Name:</label>
-        <input placeholder="No Data - input f.x. Grand Maestro" class="inputfield" id="inpHotelName" required type="text"><br>
+        <input class="inputfield" id="inpHotelName" placeholder="No Data - input f.x. Grand Maestro" required
+               type="text"><br>
 
         <label class="form-lab" for="inpHotelAddress">Adress:</label>
-        <input placeholder="No Data - input f.x. Las Vegas boulevard 1" class="inputfield" id="inpHotelAddress" required type="text"><br>
+        <input class="inputfield" id="inpHotelAddress" placeholder="No Data - input f.x. Las Vegas boulevard 1" required
+               type="text"><br>
 
         <label class="form-lab" for="inpHotelCity">City:</label>
-        <input placeholder="No Data - input f.x. USA" class="inputfield" id="inpHotelCity" required type="text"><br>
+        <input class="inputfield" id="inpHotelCity" placeholder="No Data - input f.x. USA" required type="text"><br>
 
         <label class="form-lab" for="inpHotelZip">Zip:</label>
-        <input placeholder="No Data - input f.x. 172930" class="inputfield" id="inpHotelZip" required type="number"><br>
+        <input class="inputfield" id="inpHotelZip" placeholder="No Data - input f.x. 172930" required type="number"><br>
 
         <label class="form-lab" for="inpHotelEmail">Email:</label>
-        <input placeholder="No Data - input f.x. grandmaestro@loriderhotels.com" class="inputfield" id="inpHotelEmail" required type="text"><br>
+        <input class="inputfield" id="inpHotelEmail" placeholder="No Data - input f.x. grandmaestro@loriderhotels.com"
+               required type="text"><br>
 
         <label class="form-lab" for="inpHotelPhone">Phone:</label>
-        <input placeholder="No Data - input f.x. 12345678" class="inputfield" id="inpHotelPhone" required type="number"><br>
+        <input class="inputfield" id="inpHotelPhone" placeholder="No Data - input f.x. 12345678" required type="number"><br>
 
         <label class="form-lab" for="inpHotelDescription">Description:</label>
-        <input placeholder="No Data - input f.x. Beautiful hotel in the heart of Venedi" class="inputfield" id="inpHotelDescription" required type="text"><br>
+        <input class="inputfield" id="inpHotelDescription"
+               placeholder="No Data - input f.x. Beautiful hotel in the heart of Venedi" required type="text"><br>
 
         <label class="form-lab" for="inpHotelPictureUrl">Picture URL:</label>
-        <input placeholder="No Data - input f.x. www.shutterstock.com/pictureurl" class="inputfield" id="inpHotelPictureUrl" required type="text"><br>
+        <input class="inputfield" id="inpHotelPictureUrl"
+               placeholder="No Data - input f.x. www.shutterstock.com/pictureurl" required type="text"><br>
 
         <!-- Making hidden field for saving the created date -->
         <input class="inputfield" id="inpHotelCreated" readonly type="hidden">
@@ -43,7 +48,7 @@
         <button class="button-style" type="submit">Update Hotel</button>
 
     </form>
-    <button class="button-style" id="btnFrontpage">Return to frontpage</button>
+    <button class="button-style" id="btnHotelList">Return to Hotel List</button>
 </div>
 
 <script src="../../JS/hotel/updateHotel.js" type="module"></script>

@@ -54,9 +54,9 @@ document.getElementById("createHotelForm").addEventListener('submit', async () =
     }
 });
 
-function navigateFrontpage()
+function navigateHotelsList()
 {
-    window.location.href = "frontpage.html";
+    window.location.href = "./listHotels.html";
 }
 
-document.getElementById("btnFrontpage").addEventListener('click', navigateFrontpage);
+document.getElementById("btnFrontpage").addEventListener('click', navigateHotelsList);

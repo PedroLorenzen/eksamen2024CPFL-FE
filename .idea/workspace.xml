@@ -3,6 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="9531dc7c-cdef-472d-8d55-503f7da16fa0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/frontpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/frontpage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/frontpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/frontpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/guest/createGuest.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/guest/createGuest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/hotel/createHotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/hotel/createHotel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/hotel/listHotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/hotel/listHotels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/hotel/updateHotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/hotel/updateHotel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/reservation/createReservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/reservation/createReservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/room/createRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/room/createRoom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/room/listRooms.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/room/listRooms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/user/createUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/user/createUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/hotel/createHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/createHotel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/hotel/listHotels.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/listHotels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/hotel/updateHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/updateHotel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/modules/sendObjectAsJson.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/modules/sendObjectAsJson.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/reservation/createReservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/reservation/createReservation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/room/listRooms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +58,9 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/chris/OneDrive/Datamatiker uddannelsen/3 semester/Eksamen/Programmering/Eksamensprojekt/eksamen2024CPFL-FE",
     "list.type.of.created.stylesheet": "CSS",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
   "keyToStringList": {
@@ -69,7 +89,8 @@
       <workItem from="1704979923824" duration="4584000" />
       <workItem from="1704985064914" duration="4324000" />
       <workItem from="1704993929175" duration="14638000" />
-      <workItem from="1705019306884" duration="6625000" />
+      <workItem from="1705019306884" duration="12697000" />
+      <workItem from="1705033316739" duration="628000" />
     </task>
     <servers />
   </component>

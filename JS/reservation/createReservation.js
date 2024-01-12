@@ -1,51 +1,25 @@
-import {fetchAnyUrl} from "../modules/fetchAnyUrl";
-
-const hotelBaseUrl = "http://localhost:8080/hotel";
-
-function getIdFromURL()
-{
-    const queryParams = new URLSearchParams(window.location.search);
-    return queryParams.get('id');
-}
-
-async function fetchHotelData(hotelId)
-{
-    const url = hotelBaseUrl + "/" + hotelId;
-    console.log("Fetching hotel data from: " + url + hotelId)
-    try
-    {
-        return await fetchAnyUrl(url);
-    }
-    catch (error)
-    {
-        console.error('Error fetching hotel data:', error);
-    }
-}
-
-export async function populateForm()
-{
-    if (getIdFromURL())
-    {
-        const hotelData = await fetchHotelData(getIdFromURL());
-        if (hotelData)
-        {
-            document.getElementById("showHotelName").value = hotelData.name;
-        }
-    }
-    else
-    {
-        console.error("No hotel ID provided in URL");
-    }
-}
+import {populateHotelForm} from "./modules/getHotel.js";
+import {populateRoomDropdown} from "./modules/dropdownRooms.js";
+import {getIdFromURL} from "./modules/getIdFromURL.js";
+import {populateGuestDropdown} from "./modules/dropdownGuests.js";
 
 document.addEventListener("DOMContentLoaded", async function ()
 {
     try
     {
-        await populateForm();
+        await populateHotelForm();
+        await populateRoomDropdown(getIdFromURL());
+        await populateGuestDropdown();
     }
     catch (error)
     {
         console.error("Error populating form", error);
     }
 });
+
+function navigateHotelsList()
+{
+    window.location.href = "../hotel/listHotels.html";
+}
+
+document.getElementById("btnFrontpage").addEventListener('click', navigateHotelsList);
