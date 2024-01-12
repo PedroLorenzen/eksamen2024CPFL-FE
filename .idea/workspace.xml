@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9531dc7c-cdef-472d-8d55-503f7da16fa0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/hotel/listHotels.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/hotel/listHotels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/reservation/createReservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/reservation/createReservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/guest/createGuest.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/guest/createGuest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/hotel/listHotels.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/listHotels.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/hotel/updateHotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/hotel/updateHotel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/reservation/createReservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/reservation/createReservation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/room/createRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/room/createRoom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +69,7 @@
       <workItem from="1704979923824" duration="4584000" />
       <workItem from="1704985064914" duration="4324000" />
       <workItem from="1704993929175" duration="14638000" />
-      <workItem from="1705019306884" duration="5070000" />
+      <workItem from="1705019306884" duration="6625000" />
     </task>
     <servers />
   </component>
