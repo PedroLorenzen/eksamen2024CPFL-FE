@@ -12,15 +12,15 @@ export async function populateRoomDropdown(hotelId)
         const selectElement = document.getElementById('inpRoom');
         selectElement.innerHTML = '';
 
-        rooms.forEach(room =>
+        rooms.forEach(function (room)
         {
             const option = createOption(room.roomNumber, room.id);
             selectElement.appendChild(option);
         });
 
-        selectElement.addEventListener('change', () =>
+        selectElement.addEventListener('change', function ()
         {
-            updateRoomDetails(selectElement.value, rooms);
+            updateRoomDetails(hotelId, selectElement.value);
         });
     }
     catch (error)
@@ -29,13 +29,26 @@ export async function populateRoomDropdown(hotelId)
     }
 }
 
-function updateRoomDetails(selectedRoomId, rooms)
+
+// Jeg var nødt til at hente hele al information om rummet fra databasen, da jeg ikke kunne hente data fra rooms.
+async function updateRoomDetails(hotelId, selectedRoomNumber)
 {
-    const selectedRoom = rooms.find(room => room.id == selectedRoomId);
-    if (selectedRoom)
+    const roomDetailsUrl = "http://localhost:8080/hotel/" + hotelId + "/room/" + selectedRoomNumber;
+
+    try
     {
-        document.getElementById("showRoomNumberOfBeds").value = selectedRoom.numberOfBeds;
-        document.getElementById("showRoomPrice").value = selectedRoom.price;
-        document.getElementById("showRoomType").value = selectedRoom.type;
+        const selectedRoom = await fetchAnyUrl(roomDetailsUrl);
+
+        if (selectedRoom)
+        {
+            document.getElementById("showRoomNumberOfBeds").value = selectedRoom.numberOfBeds;
+            document.getElementById("showRoomPrice").value = selectedRoom.price;
+            document.getElementById("showRoomType").value = selectedRoom.type;
+        }
+    }
+    catch (error)
+    {
+        console.error('Error fetching room details:', error);
     }
 }
+
